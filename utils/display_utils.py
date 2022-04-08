@@ -33,8 +33,8 @@ def plot_loss_logs(G_loss, D_loss, figsize=(15, 5), smoothing=0.001):
     plt.ion()
     sns.set()
     plt.figure(figsize=figsize)
-    plt.plot(D_loss, label='C_loss')
-    plt.plot(G_loss, label='G_loss')
+    plt.plot(D_loss, label='Discriminator_loss')
+    plt.plot(G_loss, label='Generator_loss')
     plt.legend(loc='lower right', fontsize='medium')
     plt.xlabel('Iteration', fontsize='x-large')
     plt.ylabel('Losses', fontsize='x-large')
@@ -168,7 +168,7 @@ def display_loss(iteration, d_losses, g_losses):
     line2, = plt.plot(range(iteration+1), g_losses, 'k')
     plt.xlabel('Iterations')
     plt.ylabel('Losses')
-    plt.legend((line1, line2), ('C-loss', 'G-loss'))
+    plt.legend((line1, line2), ('D-loss', 'G-loss'))
     
     return display.display(fig)
 
