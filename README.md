@@ -1,7 +1,7 @@
 # Music Generation using Symbolic Representation with Generative Adversarial Networks (GANs) 🎼
 
 <p align="center">
-    <img height=350 src="https://github.com/mughees-asif/music-generation-gan/blob/master/images/chopin_intro.jpg">
+    <img height=350 src="./images/chopin.jpg">
 </p>
 
 ## Abstract 🧾
